@@ -33,21 +33,4 @@ Berikut adalah langkah-langkah untuk menggunakan program ini:
 
 3. Setelah selesai memasukkan data buku, program akan menampilkan daftar buku yang tersedia di `Bookstore` menggunakan metode `display_books()`.
 
-Contoh Penggunaan:
-```python
-# Membuat objek Bookstore
-bookstore = Bookstore("Toko Buku ALWI")
 
-# Memasukkan data buku secara manual
-while True:
-    title = input("Masukkan judul buku (Tekan Enter jika ingin stop): ")
-    if title == "":
-        break
-    author = input("Masukkan nama penulis: ")
-    price = float(input("Masukkan harga buku: "))
-
-    book = Book(title, author, price)
-    bookstore.add_book(book)
-
-# Menampilkan daftar buku yang tersedia di Bookstore
-bookstore.display_books()
